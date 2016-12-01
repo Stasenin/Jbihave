@@ -1,14 +1,16 @@
 package JbhvTest;
 
 
-public class SomeStories extends JbhvSteps{
+public class SomeStories {
 
     public static void main (String[]args) {
+
+
         JbhvSteps jbhvSteps = new JbhvSteps();
-        jbhvSteps.givenAProppertiesOfABrowser();
+        jbhvSteps.getDriver();
+        jbhvSteps.aRightbBowser();
         jbhvSteps.whenGetGooglePage();
         jbhvSteps.thenSearchForSomething();
-
 
 
 
