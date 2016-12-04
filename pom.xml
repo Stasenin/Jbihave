@@ -8,7 +8,6 @@
     <artifactId>Test_JBhv_1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <build>
         <plugins>
             <plugin>
@@ -20,58 +19,16 @@
                     <target>1.5</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.jbehave</groupId>
-                <artifactId>jbehave-maven-plugin</artifactId>
-                <version>4.1</version>
-                <executions>
-                    <execution>
-                        <id>run-stories-as-embeddables</id>
-                        <phase>integration-test</phase>
-                        <configuration>
-                            <includes>
-                                <include>**/*Stories.java</include>
-                            </includes>
-                            <metaFilters>
-                                <metaFilter>+author *</metaFilter>
-                                <metaFilter>-skip</metaFilter>
-                            </metaFilters>
-                            <systemProperties>
-                                <property>
-                                    <name>java.awt.headless</name>
-                                    <value>true</value>
-                                </property>
-                            </systemProperties>
-                            <ignoreFailureInStories>true</ignoreFailureInStories>
-                            <ignoreFailureInView>false</ignoreFailureInView>
-                        </configuration>
-                        <goals>
-                            <goal>run-stories-as-embeddables</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-        <resources>
-            <resource>
-                <directory>src/test/resources</directory>
-            </resource>
-        </resources>
-    </build>
+            </plugins>
 
+</build>
 
     <dependencies>
-        <dependency>
-            <groupId>org.jbehave</groupId>
-            <artifactId>jbehave-jenkins-plugin</artifactId>
-            <version>4.1</version>
-        </dependency>
         <!--<dependency>-->
             <!--<groupId>org.jbehave.web</groupId>-->
             <!--<artifactId>jbehave-web-selenium</artifactId>-->
             <!--<version>3.5.5</version>-->
         <!--</dependency>-->
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-api</artifactId>
@@ -95,7 +52,7 @@
         <dependency>
             <groupId>org.jbehave</groupId>
             <artifactId>jbehave-core</artifactId>
-            <version>4.1</version>
+            <version>4.0.5</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
