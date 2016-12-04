@@ -42,7 +42,7 @@
                         <configuration>
                             **<scope>test</scope>**
                             <includes>
-                                <include>**/*JbhvSteps.java</include>
+                                <include>**/*StoryConfigurator.java</include>
                             </includes>
                             <ignoreFailureInStories>true</ignoreFailureInStories>
                             <ignoreFailureInView>false</ignoreFailureInView>
